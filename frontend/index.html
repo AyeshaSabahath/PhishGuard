@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard | AI Phishing Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-icon">🛡</div>
+            <div>
+                <h1>PhishGuard</h1>
+                <p>AI-Powered Phishing URL Detection</p>
+            </div>
+        </div>
+        <div class="status"><span></span> Java ML Engine Online</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <span class="eyebrow">CYBERSECURITY • MACHINE LEARNING</span>
+                <h2>Check a URL before<br><span>you trust it.</span></h2>
+                <p class="hero-text">
+                    PhishGuard extracts URL security features and uses a Random Forest
+                    classifier to identify potentially phishing links.
+                </p>
+            </div>
+            <div class="hero-card">
+                <div class="mini-label">DETECTION PIPELINE</div>
+                <div class="pipeline">
+                    <span>URL</span><b>→</b><span>FEATURES</span><b>→</b><span>ML</span><b>→</b><span>RISK</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="scanner card">
+            <div class="section-title">
+                <div>
+                    <h3>URL Scanner</h3>
+                    <p>Paste a website address for analysis.</p>
+                </div>
+                <button class="sample-btn" id="sampleBtn">Try sample</button>
+            </div>
+
+            <div class="input-row">
+                <input id="urlInput" type="text" placeholder="https://example.com/login" autocomplete="off">
+                <button id="analyzeBtn">Analyze URL <span>→</span></button>
+            </div>
+            <div class="hint">For demo purposes, do not enter passwords, tokens, or private URLs.</div>
+        </section>
+
+        <section id="resultSection" class="result card hidden">
+            <div class="result-header">
+                <div>
+                    <span class="mini-label">ANALYSIS RESULT</span>
+                    <h3 id="resultTitle">—</h3>
+                    <p id="resultUrl">—</p>
+                </div>
+                <div id="badge" class="badge">—</div>
+            </div>
+
+            <div class="metrics">
+                <div class="metric">
+                    <span>Risk Score</span>
+                    <strong id="riskScore">0%</strong>
+                    <div class="bar"><div id="riskBar"></div></div>
+                </div>
+                <div class="metric">
+                    <span>Model Confidence</span>
+                    <strong id="confidence">0%</strong>
+                    <div class="bar"><div id="confidenceBar"></div></div>
+                </div>
+            </div>
+
+            <div class="indicators">
+                <h4>Security Indicators</h4>
+                <div id="indicatorList"></div>
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <div class="card info-card">
+                <div class="info-icon">🧠</div>
+                <h3>Machine Learning</h3>
+                <p>Random Forest classification trained on URL feature data using Weka.</p>
+            </div>
+            <div class="card info-card">
+                <div class="info-icon">🔎</div>
+                <h3>Feature Extraction</h3>
+                <p>Analyzes URL length, subdomains, HTTPS, symbols, keywords, entropy and more.</p>
+            </div>
+            <div class="card info-card">
+                <div class="info-icon">⚠️</div>
+                <h3>Security Heuristics</h3>
+                <p>Provides human-readable indicators explaining why a URL may look suspicious.</p>
+            </div>
+        </section>
+
+        <section class="card disclaimer">
+            <strong>Demo / educational tool:</strong>
+            A phishing prediction is not proof that a website is malicious or safe.
+            Do not use this application as the sole basis for security decisions.
+        </section>
+    </main>
+
+    <footer>PhishGuard • Java + Spring Boot + Weka • Educational Cybersecurity Project</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
