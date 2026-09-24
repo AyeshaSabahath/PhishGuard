@@ -1,5 +1,6 @@
 package com.phishguard;
 
+import org.springframework.context.annotation.DependsOn:
 import org.springframework.stereotype.Service;
 import weka.classifiers.Classifier;
 import weka.core.Attribute;
@@ -11,6 +12,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 @Service
+@DependsOn("modelTrainer")
 public class PhishingDetectorService {
 
     private final UrlFeatureExtractor extractor = new UrlFeatureExtractor();
