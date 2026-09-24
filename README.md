@@ -106,3 +106,7 @@ The model will be regenerated.
 ## Viva explanation
 
 "PhishGuard is a Java Spring Boot cybersecurity application that uses Weka Random Forest classification to identify potentially phishing URLs. The application extracts structural URL features such as URL length, subdomain count, HTTPS usage, suspicious keywords, IP-host usage and entropy. The trained classifier predicts whether a URL is benign or phishing, while the application also presents explainable heuristic indicators and a project-specific risk score."
+
+Authors:
+- Ayesha Sabahath
+- Adiba Parveen
