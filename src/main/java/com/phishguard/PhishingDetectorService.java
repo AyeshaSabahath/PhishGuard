@@ -1,6 +1,6 @@
 package com.phishguard;
 
-import org.springframework.context.annotation.DependsOn:
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Service;
 import weka.classifiers.Classifier;
 import weka.core.Attribute;
