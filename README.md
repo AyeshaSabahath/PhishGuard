@@ -110,3 +110,5 @@ The model will be regenerated.
 ## Authors:
 - Ayesha Sabahath
 - Adiba Parveen
+- Mahek Sultana
+- Radifa Khanam
